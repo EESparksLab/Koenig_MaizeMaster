@@ -12,6 +12,7 @@ import TestingScreen from './components/TestingScreen';
 import AdminLoginScreen from './components/AdminLoginScreen';
 // import computeSourceMap from 'sucrase/dist/computeSourceMap';
 
+
 // Async Storage
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -65,7 +66,6 @@ export default function App({ navigation }) {
 
   // SV to hold Test Type
   const [testType, setTestType] = useState('None Selected')
-
 
 
   // Async Store Data Function - JSON object
@@ -227,7 +227,7 @@ export default function App({ navigation }) {
     let tmpData = JSON.parse(await AsyncStorage.getItem(value))
 
     let tempHeight = 0.15;
-    
+
     for (var i in tmpData) {
       let torque = parseInt(tmpData[i][1]) * tempHeight;
       let tmp = {
