@@ -1,6 +1,6 @@
 # MaizeMaster
 
-To Run A simulator of this project:
+To Run a simulator of this project:
 1. Download all above files
 2. Install npm with npm install - if you don't have you will have to download
 3. run expo start
